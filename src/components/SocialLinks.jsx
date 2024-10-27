@@ -1,7 +1,6 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin,FaFacebook } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const SocialLinks = () => {
 
@@ -13,7 +12,7 @@ const SocialLinks = () => {
                     LinkedIn <FaLinkedin size={30} />
                 </>
             ),
-            href: 'https://www.linkedin.com/in/shubham-tiwari-954095207',
+            href: 'https://www.linkedin.com/in/javidan-valizada-163747284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
             style: 'rounded-tr-md'
         },
         {
@@ -23,7 +22,7 @@ const SocialLinks = () => {
                     GitHub <FaGithub size={30} />
                 </>
             ),
-            href: 'https://github.com/Shubh2268'
+            href: 'https://github.com/Cavidan232'
         },
         {
             id: 3,
@@ -32,18 +31,17 @@ const SocialLinks = () => {
                     Mail <HiOutlineMail size={30} />
                 </>
             ),
-            href: 'shubh2268@gmail.com'
+            href: 'cavidanvelizade9@gmail.com'
         },
         {
-            id: 4,
-            child: (
+            id:4,
+            child:(
                 <>
-                    Resume <BsFillPersonLinesFill size={30} />
+                Facebook <FaFacebook size={30}/>
                 </>
             ),
-            href: '/Resume.pdf',
-            style: 'rounded-br-md',
-            download: true
+            href:"https://www.facebook.com/cavidan.velizade.1907?mibextid=ZbWKwL",
+
         }
     ];
 

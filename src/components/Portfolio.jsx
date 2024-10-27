@@ -1,35 +1,35 @@
 import React from 'react';
-import fitness from '../assets/portfolio/fitness.png';
-import onnn from '../assets/portfolio/onnn.png';
-import anton from '../assets/portfolio/anton.png';
-import weather from '../assets/portfolio/weather.png';
+import music from '../assets/portfolio/music.png';
+import restoran from '../assets/portfolio/restoran.png';
+import not from '../assets/portfolio/not.png';
+import ecotu from '../assets/portfolio/ecotu.png';
 
 const Portfolio = () => {
 
     const portfolios = [
         {
             id: 1,
-            src: fitness,
-            live: 'https://fitness-monster.netlify.app',
-            code: 'https://github.dev/Shubh2268/Gym-Exercises'
+            src: music,
+            live: 'https://artlist-phi.vercel.app/',
+            code: 'https://github.dev/Cavidan232/artlist-clone'
         },
         {
             id: 2,
-            src: onnn,
-            live: 'https://onnn.netlify.app',
-            code: 'https://github1s.com/Shubh2268/IMDB-Clone/blob/HEAD/src/App.js'
+            src: restoran,
+            live: 'https://restoran-omega.vercel.app',
+            code: 'https://github.dev/Cavidan232/restoran-site'
         },
         {
             id: 3,
-            src: anton,
-            live: 'https://anton-pro.netlify.app',
-            code: 'https://github1s.com/Shubh2268/ANTON-Future/blob/main/src/App.js'
+            src: not,
+            live: 'https://simple-note-clon.vercel.app',
+            code: 'https://github.dev/Cavidan232/simple-note-clon'
         },
         {
             id: 4,
-            src: weather,
-            live: 'https://weather-app-2-0.netlify.app',
-            code: 'https://github1s.com/Shubh2268/Cloud-web-services/blob/main/src/App.js'
+            src: ecotu,
+            live: 'https://ecotu.vercel.app',
+            code: 'https://github.dev/Cavidan232/Ecotu'
         }
     ];
 

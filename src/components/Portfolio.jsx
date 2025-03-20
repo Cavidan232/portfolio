@@ -2,7 +2,7 @@ import React from 'react';
 import music from '../assets/portfolio/music.png';
 import restoran from '../assets/portfolio/restoran.png';
 import not from '../assets/portfolio/not.png';
-import ecotu from '../assets/portfolio/ecotu.png';
+import lankonFarm from '../assets/portfolio/lankonFarm.png';
 
 const Portfolio = () => {
 
@@ -27,9 +27,9 @@ const Portfolio = () => {
         },
         {
             id: 4,
-            src: ecotu,
-            live: 'https://ecotu.vercel.app',
-            code: 'https://github.dev/Cavidan232/Ecotu'
+            src: lankonFarm,
+            live: 'https://lankonfarm.com',
+            code: ''
         }
     ];
 

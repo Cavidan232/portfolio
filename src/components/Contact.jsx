@@ -2,33 +2,76 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div name='contact' className='w-full h-full bg-gradient-to-b from-black to-gray-900 p-4 text-white'>
+        <div
+            name="contact"
+            className="h-full w-full bg-gray-50 p-4 text-gray-900 transition-colors duration-300 dark:bg-gradient-to-b dark:from-black dark:to-gray-900 dark:text-white"
+        >
+            <div className="mx-auto flex h-full max-w-screen-lg flex-col justify-center p-4 pb-8 sm:pt-20 md:pt-44">
 
-            <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full pb-8 sm:pt-20 md:pt-44'>
+                {/* Section heading */}
+                <div className="flex flex-col items-center justify-center">
+                    <h2 className="inline border-b-4 border-cyan-600 text-2xl font-bold transition-colors duration-300 dark:border-cyan-400 sm:text-3xl lg:text-4xl">
+                        Contact
+                    </h2>
 
-                <div className='flex flex-col justify-center items-center'>
-                    <p className='text-2xl sm:text-3xl lg:text-4xl font-bold inline border-b-4 border-gray-500'>Contact</p>
-                    <p className='py-6'>Please, submit the form below to get in touch with me</p>
+                    <p className="py-6 text-center text-gray-600 transition-colors duration-300 dark:text-gray-400">
+                        Please, submit the form below to get in touch with me.
+                    </p>
                 </div>
 
-                <div className='flex justify-center items-center'>
-                    <form action="https://getform.io/f/bvrreodb" method='POST' className='flex flex-col w-full md:w-1/2'>
-                        <input type="text" name="Name" placeholder='Enter Your Name' className=' my-2 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none' />
+                {/* Contact form */}
+                <div className="flex items-center justify-center">
+                    <form
+                        action="https://getform.io/f/bvrreodb"
+                        method="POST"
+                        className="flex w-full flex-col md:w-1/2"
+                    >
+                        <input
+                            type="text"
+                            name="Name"
+                            placeholder="Enter Your Name"
+                            autoComplete="name"
+                            required
+                            className="my-2 rounded-md border-2 border-gray-300 bg-white p-3 text-gray-900 placeholder-gray-500 outline-none transition-colors duration-300 focus:border-cyan-500 dark:border-gray-700 dark:bg-gray-900 dark:text-white dark:placeholder-gray-400 dark:focus:border-cyan-400"
+                        />
 
-                        <input type="text" name="Email" placeholder='Enter Your Email' className='my-2 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none' />
+                        <input
+                            type="email"
+                            name="Email"
+                            placeholder="Enter Your Email"
+                            autoComplete="email"
+                            required
+                            className="my-2 rounded-md border-2 border-gray-300 bg-white p-3 text-gray-900 placeholder-gray-500 outline-none transition-colors duration-300 focus:border-cyan-500 dark:border-gray-700 dark:bg-gray-900 dark:text-white dark:placeholder-gray-400 dark:focus:border-cyan-400"
+                        />
 
-                        <input type="text" name="Phone" placeholder='Enter Your Phone' className='my-2 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none' />
+                        <input
+                            type="tel"
+                            name="Phone"
+                            placeholder="Enter Your Phone"
+                            autoComplete="tel"
+                            className="my-2 rounded-md border-2 border-gray-300 bg-white p-3 text-gray-900 placeholder-gray-500 outline-none transition-colors duration-300 focus:border-cyan-500 dark:border-gray-700 dark:bg-gray-900 dark:text-white dark:placeholder-gray-400 dark:focus:border-cyan-400"
+                        />
 
-                        <textarea name="Message" placeholder='Enter your message.....' rows="10" className='my-2 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none'></textarea>
+                        <textarea
+                            name="Message"
+                            placeholder="Enter your message..."
+                            rows={7}
+                            required
+                            className="my-2 resize-y rounded-md border-2 border-gray-300 bg-white p-3 text-gray-900 placeholder-gray-500 outline-none transition-colors duration-300 focus:border-cyan-500 dark:border-gray-700 dark:bg-gray-900 dark:text-white dark:placeholder-gray-400 dark:focus:border-cyan-400"
+                        />
 
-                        <button className='text-white font-semibold bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-105 ease-in duration-300'>Let's talk</button>
+                        <button
+                            type="submit"
+                            className="mx-auto my-8 flex items-center rounded-md bg-gradient-to-r from-cyan-600 to-blue-600 px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:from-cyan-500 hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 dark:focus:ring-offset-gray-950"
+                        >
+                            Let's talk
+                        </button>
                     </form>
                 </div>
 
             </div>
-
         </div>
-    )
-}
+    );
+};
 
 export default Contact;
